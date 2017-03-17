@@ -5,12 +5,13 @@
     android:id="@+id/content_share_of_shelf"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.cpm.dailyentry.ShareOfShelfActivity"
     tools:showIn="@layout/activity_share_of_shelf">
+    <ExpandableListView
+        android:id="@+id/shareofshelf_expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </RelativeLayout>

@@ -5,12 +5,48 @@
     android:id="@+id/content_stock_availability2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/white"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.cpm.dailyentry.StockAvailability2Activity"
     tools:showIn="@layout/activity_stock_availability2">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include
+            android:id="@+id/entry_data"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_below="@+id/appbar"
+            layout="@layout/opening_stock_entry"
+            android:visibility="invisible" />
+
+        <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_below="@+id/appbar"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollingCache="false" />
+
+        <com.cpm.keyboard.CustomKeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" >
+        </com.cpm.keyboard.CustomKeyboardView>
+
 
 </RelativeLayout>
