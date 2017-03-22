@@ -6,30 +6,23 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.cpm.Constants.CommonString1;
-import com.cpm.GetterSetter.ShareShelfInsertHeaderDataGetterSetter;
 import com.cpm.capitalfoods.R;
 import com.cpm.database.GSKDatabase;
 import com.cpm.xmlGetterSetter.BrandGetterSetter;
 import com.cpm.xmlGetterSetter.CategoryMasterGetterSetter;
-import com.cpm.xmlGetterSetter.StockNewGetterSetter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,6 +60,7 @@ public class ShareOfShelfActivity extends AppCompatActivity implements View.OnCl
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Share of Shelf");
         fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(this);
         expandableListView = (ExpandableListView) findViewById(R.id.shareofshelf_expandable);
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         store_cd = preferences.getString(CommonString1.KEY_STORE_CD, null);

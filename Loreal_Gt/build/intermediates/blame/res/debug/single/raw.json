@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\deepak\\Loreal_MT_Merchandiser\\Loreal_GT_Merchandiser\\Loreal_Gt\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "E:\\deepak\\Loreal_MT_Merchandiser\\Loreal_GT_Merchandiser\\Loreal_Gt\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "E:\\Loreal_GT_Merchandiser_9_3_2017\\Loreal_GT_Merchandiser\\Loreal_Gt\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "E:\\Loreal_GT_Merchandiser_9_3_2017\\Loreal_GT_Merchandiser\\Loreal_Gt\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\raw\\gtm_analytics"
+    }
+]
